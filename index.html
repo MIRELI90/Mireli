@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+<head><link rel="icon" href="logo.png" type="image/png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MIRELI – Räume mit Charakter</title>
@@ -23,28 +23,42 @@
     footer { background: #000; color: #999; padding: 30px; text-align: center; }
     footer a { color: #ffcc00; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-  </style>
+  </style>@keyframes glowPulse {
+  0%   { filter: drop-shadow(0 0 6px rgba(255, 204, 0, 0.6)); }
+  50%  { filter: drop-shadow(0 0 15px rgba(255, 204, 0, 1)); }
+  100% { filter: drop-shadow(0 0 6px rgba(255, 204, 0, 0.6)); }
+}
+
+.logo {
+  height: 50px;
+  animation: glowPulse 3s infinite ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 20px rgba(255, 204, 0, 1));
+}
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-  <img src="logo.png" alt="MIRELI Logo" style="height:50px;">
-</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-light" href="#about">Über uns</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#leistungen">Leistungen</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#warum">Warum MIRELI</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="MIRELI Logo" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="#about">Über uns</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#leistungen">Leistungen</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#warum">Warum MIRELI</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#kontakt">Kontakt</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
   <!-- Hero -->
   <header class="hero">
     <h1>INTERIOR.DESIGN.</h1>
