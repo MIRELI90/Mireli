@@ -4,105 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MIRELI – Räume mit Charakter</title>
+  <meta name="description" content="MIRELI – moderner Innenausbau, Trockenbau, Paneele, Fußbodenheizung und Hausmeisterservice. Räume mit Charakter.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
+    body { background: #111; color: #eee; font-family: Arial, sans-serif; }
+    .navbar { background: rgba(0,0,0,0.9); }
+    .navbar-brand { font-weight: bold; color: #ffcc00 !important; }
+    .hero {
       background: url('https://images.unsplash.com/photo-1505691723518-36a1a07fd7f4?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
+      min-height: 90vh; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;
     }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #444;
-      margin-bottom: 10px;
-    }
-    .leistungen {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .leistungen div {
-      border: 1px solid #ddd;
-      padding: 20px;
-      border-radius: 5px;
-      background: #f9f9f9;
-    }
-    .leistungen img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    footer a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
+    .hero h1 { font-size: 3rem; color: #fff; text-shadow: 0 0 10px #000; }
+    .hero p { font-size: 1.2rem; color: #ddd; }
+    section { padding: 80px 20px; }
+    h2 { color: #ffcc00; margin-bottom: 30px; }
+    .card { background: #222; border: none; color: #eee; }
+    .card img { border-radius: 5px; }
+    footer { background: #000; color: #999; padding: 30px; text-align: center; }
+    footer a { color: #ffcc00; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MIRELI – Räume mit Charakter</h1>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MIRELI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="#about">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#leistungen">Leistungen</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#warum">Warum MIRELI</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Räume mit Charakter</h1>
     <p>Innenausbau mit Stil und Qualität</p>
+    <a href="#kontakt" class="btn btn-warning mt-3">Jetzt Kontakt aufnehmen</a>
   </header>
-
-  <section>
+  <!-- Über uns -->
+  <section id="about" class="container">
     <h2>Über uns</h2>
     <p>
       Willkommen bei MIRELI, Ihrem Partner für modernen Innenausbau und zuverlässigen Service. 
       Wir gestalten Räume, die nicht nur funktionieren, sondern begeistern.
     </p>
   </section>
-
-  <section>
+  <!-- Leistungen -->
+  <section id="leistungen" class="container">
     <h2>Unsere Leistungen</h2>
-    <div class="leistungen">
-      <div>
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Trockenbau">
-        <h3>Trockenbau & TECE-GIS</h3>
-        <p>Präzise Umsetzung mit modernen Systemen für stabile und flexible Raumgestaltung.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Trockenbau">
+          <div class="card-body">
+            <h5 class="card-title">Trockenbau & TECE-GIS</h5>
+            <p class="card-text">Präzise Umsetzung mit modernen Systemen für stabile und flexible Raumgestaltung.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1616628182505-6f4cfab405a1?auto=format&fit=crop&w=800&q=80" alt="Paneele">
-        <h3>Paneele in moderner Optik</h3>
-        <p>Hochwertige Materialien für ein elegantes und langlebiges Raumdesign.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1616628182505-6f4cfab405a1?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Paneele">
+          <div class="card-body">
+            <h5 class="card-title">Paneele in moderner Optik</h5>
+            <p class="card-text">Hochwertige Materialien für ein elegantes und langlebiges Raumdesign.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=800&q=80" alt="Fußbodenheizung">
-        <h3>Fußbodenheizung & Bodenverlegung</h3>
-        <p>Komfort und Qualität – wir sorgen für warme Füße und langlebige Böden.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Fußbodenheizung">
+          <div class="card-body">
+            <h5 class="card-title">Fußbodenheizung & Bodenverlegung</h5>
+            <p class="card-text">Komfort und Qualität – wir sorgen für warme Füße und langlebige Böden.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Hausmeisterservice">
-        <h3>Hausmeisterservice</h3>
-        <p>Alles aus einer Hand – zuverlässiger Rundum-Service für Ihr Objekt.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hausmeisterservice">
+          <div class="card-body">
+            <h5 class="card-title">Hausmeisterservice</h5>
+            <p class="card-text">Alles aus einer Hand – zuverlässiger Rundum-Service für Ihr Objekt.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <section>
+  <!-- Warum MIRELI -->
+  <section id="warum" class="container">
     <h2>Warum MIRELI?</h2>
     <ul>
       <li>Alles aus einer Hand</li>
@@ -111,17 +109,33 @@
       <li>Ein Name, der für Qualität steht</li>
     </ul>
   </section>
-
-  <section>
+  <!-- Kontakt -->
+  <section id="kontakt" class="container">
     <h2>Kontakt</h2>
-    <p>
-      Schreiben Sie uns: <a href="mailto:info@mireli.de">info@mireli.de</a><br>
-      Rufen Sie uns an: <a href="tel:+491234567890">+49 123 456 7890</a>
+    <p>Schreiben Sie uns direkt über das Formular:</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="mb-3">
+        <input type="text" class="form-control" name="name" placeholder="Ihr Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Ihre E-Mail" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" name="nachricht" rows="4" placeholder="Ihre Nachricht" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning">Nachricht senden</button>
+    </form>
+    <p class="mt-3">Oder klassisch:<br>
+      E-Mail: <a href="mailto:info@mireli.de">info@mireli.de</a><br>
+      Telefon: <a href="tel:+491234567890">+49 123 456 7890</a>
     </p>
   </section>
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 MIRELI – Räume mit Charakter | Innenausbau & Service</p>
+    <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+  
