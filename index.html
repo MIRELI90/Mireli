@@ -65,6 +65,14 @@
     footer { background: #000; color: #999; padding: 30px; text-align: center; }
     footer a { color: #ffcc00; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    /* Fix: Abstand in 'Das ist MIRELI' */
+    #about p {
+      margin-bottom: 2rem; /* Abstand zwischen Absätzen */
+    }
+    #about p:last-child {
+      margin-bottom: 0; /* Letzter Absatz ohne Extra-Abstand */
+    }
   </style>
 </head>
 <body>
@@ -90,7 +98,6 @@
 
   <!-- Hero Slider -->
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover">
-
     <!-- Indikatoren -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -99,7 +106,6 @@
     </div>
 
     <div class="carousel-inner">
-      
       <!-- Slide 1 -->
       <div class="carousel-item active" style="background-image: url('slider1.png');">
         <div class="overlay">
@@ -137,28 +143,18 @@
     </button>
   </div>
 
-<!-- CSS einfügen (im <style>-Bereich im <head>) -->
-<style>
-  #about p {
-    margin-bottom: 2rem !important; /* Abstand zwischen Absätzen erzwingen */
-  }
-  #about p:last-child {
-    margin-bottom: 0 !important; /* Letzter Absatz ohne Extra-Abstand */
-  }
-</style>
+  <!-- Das ist MIRELI -->
+  <section id="about" class="container">
+    <h2>Das ist MIRELI&trade;</h2>
 
-<!-- Das ist MIRELI -->
-<section id="about" class="container">
-  <h2>Das ist MIRELI&trade;</h2>
+    <p>MIRELI schafft Räume mit Charakter – modern, verlässlich und voller Leben.</p>
 
-  <p>MIRELI schafft Räume mit Charakter – modern, verlässlich und voller Leben.</p>
+    <p>Wir verbinden präzises Handwerk mit zeitgemäßem Design und gestalten Innenräume, die mehr sind als nur funktional.</p>
 
-  <p>Wir verbinden präzises Handwerk mit zeitgemäßem Design und gestalten Innenräume, die mehr sind als nur funktional.</p>
+    <p>Von der ersten Idee bis zum letzten Handgriff begleiten wir Sie mit Sorgfalt, Leidenschaft und einem Service, auf den Sie sich verlassen können.</p>
 
-  <p>Von der ersten Idee bis zum letzten Handgriff begleiten wir Sie mit Sorgfalt, Leidenschaft und einem Service, auf den Sie sich verlassen können.</p>
-
-  <p>So entstehen Räume, die nicht nur halten, was sie versprechen – sondern täglich Freude schenken.</p>
-</section>
+    <p>So entstehen Räume, die nicht nur halten, was sie versprechen – sondern täglich Freude schenken.</p>
+  </section>
 
   <!-- Handwerk trifft Design -->
   <section id="leistungen" class="container">
