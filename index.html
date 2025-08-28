@@ -161,14 +161,49 @@
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-          <img src="https://images.unsplash.com/photo-1616628182505-6f4cfab405a1?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Paneele">
-          <div class="card-body">
-            <h5 class="card-title">Paneele in moderner Optik</h5>
-            <p class="card-text">Hochwertige Materialien für ein elegantes und langlebiges Raumdesign.</p>
-          </div>
+  <div class="card h-100 text-white">
+
+    <!-- Mini-Slider für Paneele -->
+    <div id="paneeleCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+
+      <!-- Indikatoren -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Bild 1"></button>
+        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="1" aria-label="Bild 2"></button>
+        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="2" aria-label="Bild 3"></button>
+      </div>
+
+      <div class="carousel-inner" style="min-height: 250px;">
+        <!-- Bild 1 -->
+        <div class="carousel-item active">
+          <div class="d-block w-100" style="background: url('paneele1.jpg') no-repeat center center/cover; min-height: 250px;"></div>
+        </div>
+        <!-- Bild 2 -->
+        <div class="carousel-item">
+          <div class="d-block w-100" style="background: url('paneele2.jpg') no-repeat center center/cover; min-height: 250px;"></div>
+        </div>
+        <!-- Bild 3 -->
+        <div class="carousel-item">
+          <div class="d-block w-100" style="background: url('paneele3.jpg') no-repeat center center/cover; min-height: 250px;"></div>
         </div>
       </div>
+
+      <!-- Pfeile -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Text unten -->
+    <div class="card-body" style="background: rgba(0,0,0,0.6);">
+      <h5 class="card-title">Paneele in moderner Optik</h5>
+      <p class="card-text">Hochwertige Materialien für ein elegantes und langlebiges Raumdesign.</p>
+    </div>
+  </div>
+</div>
       <div class="col-md-6 col-lg-3">
         <div class="card h-100">
           <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Fußbodenheizung">
