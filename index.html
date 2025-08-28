@@ -100,7 +100,7 @@
 
     <div class="carousel-inner">
       
-      <!-- Slide 1: Moderner Innenausbau -->
+      <!-- Slide 1 -->
       <div class="carousel-item active" style="background-image: url('slider1.png');">
         <div class="overlay">
           <h1>INTERIOR.</h1>
@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <!-- Slide 2: Paneele & Böden -->
+      <!-- Slide 2 -->
       <div class="carousel-item" style="background-image: url('slider2.png');">
         <div class="overlay">
           <h1>DESIGN.</h1>
@@ -118,7 +118,7 @@
         </div>
       </div>
 
-      <!-- Slide 3: Service & Zuverlässigkeit -->
+      <!-- Slide 3 -->
       <div class="carousel-item" style="background-image: url('slider3.png');">
         <div class="overlay">
           <h1>COMFORT.</h1>
@@ -126,7 +126,6 @@
           <a href="#kontakt" class="btn btn-warning mt-3">Jetzt Kontakt aufnehmen</a>
         </div>
       </div>
-
     </div>
 
     <!-- Steuerung -->
@@ -138,14 +137,14 @@
     </button>
   </div>
 
-  <!-- Das ist MIRELI™ -->
+  <!-- Das ist MIRELI -->
   <section id="about" class="container">
-    <h2>Das ist MIRELI™</h2>
+    <h2>Das ist MIRELI&trade;</h2>
     <p>
-      MIRELI schafft Räume mit Charakter – modern, verlässlich und voller Leben.
-Wir verbinden präzises Handwerk mit zeitgemäßem Design und gestalten Innenräume, die mehr sind als nur funktional.
-Von der ersten Idee bis zum letzten Handgriff begleiten wir Sie mit Sorgfalt, Leidenschaft und einem Service, auf den Sie sich verlassen können.
-So entstehen Räume, die nicht nur halten, was sie versprechen – sondern täglich Freude schenken.
+      MIRELI schafft Räume mit Charakter – modern, verlässlich und voller Leben.<br>
+      Wir verbinden präzises Handwerk mit zeitgemäßem Design und gestalten Innenräume, die mehr sind als nur funktional.<br>
+      Von der ersten Idee bis zum letzten Handgriff begleiten wir Sie mit Sorgfalt, Leidenschaft und einem Service, auf den Sie sich verlassen können.<br>
+      So entstehen Räume, die nicht nur halten, was sie versprechen – sondern täglich Freude schenken.
     </p>
   </section>
 
@@ -153,81 +152,79 @@ So entstehen Räume, die nicht nur halten, was sie versprechen – sondern tägl
   <section id="leistungen" class="container">
     <h2>Handwerk trifft Design</h2>
     <div class="row g-4">
+
+      <!-- Trockenbau -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100">
-          <img src="tece.png">
+          <img src="tece.png" alt="TECE-GIS">
           <div class="card-body">
             <h5 class="card-title">Trockenbau & TECE-GIS</h5>
-            <p class="card-text">Saubere Vorwandinstallationen und flexible Raumlösungen.
-Stabil, präzise und perfekt für modernes Wohnen.</p>
+            <p class="card-text">Saubere Vorwandinstallationen und flexible Raumlösungen.<br>
+            Stabil, präzise und perfekt für modernes Wohnen.</p>
           </div>
         </div>
       </div>
+
+      <!-- Paneele mit Slider -->
       <div class="col-md-6 col-lg-3">
-  <div class="card h-100 text-white">
-
-    <!-- Mini-Slider für Paneele -->
-    <div id="paneeleCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
-
-      <!-- Indikatoren -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Bild 1"></button>
-        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="1" aria-label="Bild 2"></button>
-        <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="2" aria-label="Bild 3"></button>
+        <div class="card h-100 text-white">
+          <div id="paneeleCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Bild 1"></button>
+              <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="1" aria-label="Bild 2"></button>
+              <button type="button" data-bs-target="#paneeleCarousel" data-bs-slide-to="2" aria-label="Bild 3"></button>
+            </div>
+            <div class="carousel-inner" style="min-height: 250px;">
+              <div class="carousel-item active">
+                <div class="d-block w-100" style="background: url('paneele1.png') no-repeat center center/cover; min-height: 250px;"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100" style="background: url('paneele2.png') no-repeat center center/cover; min-height: 250px;"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100" style="background: url('paneele3.png') no-repeat center center/cover; min-height: 250px;"></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body" style="background: rgba(0,0,0,0.6);">
+            <h5 class="card-title">Paneele in moderner Optik</h5>
+            <p class="card-text">Fugenlose Oberflächen in Holz-, Beton- oder Marmorlook.<br>
+            Pflegeleicht, stilvoll und langlebig.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="carousel-inner" style="min-height: 250px;">
-        <!-- Bild 1 -->
-        <div class="carousel-item active">
-          <div class="d-block w-100" style="background: url('paneele1.png') no-repeat center center/cover; min-height: 250px;"></div>
-        </div>
-        <!-- Bild 2 -->
-        <div class="carousel-item">
-          <div class="d-block w-100" style="background: url('paneele2.png') no-repeat center center/cover; min-height: 250px;"></div>
-        </div>
-        <!-- Bild 3 -->
-        <div class="carousel-item">
-          <div class="d-block w-100" style="background: url('paneele3.png') no-repeat center center/cover; min-height: 250px;"></div>
-        </div>
-      </div>
-
-      <!-- Pfeile -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#paneeleCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- Text unten -->
-    <div class="card-body" style="background: rgba(0,0,0,0.6);">
-      <h5 class="card-title">Paneele in moderner Optik</h5>
-      <p class="card-text">Fugenlose Oberflächen in Holz-, Beton- oder Marmorlook.
-Pflegeleicht, stilvoll und langlebig.</p>
-    </div>
-  </div>
-</div>
+      <!-- Böden -->
       <div class="col-md-6 col-lg-3">
         <div class="card h-100">
           <img src="slider2.png" class="card-img-top" alt="Fußbodenheizung">
           <div class="card-body">
             <h5 class="card-title">Fußbodenheizung & Bodengestaltung</h5>
-            <p class="card-text">Effiziente Wärme trifft stilvolle Oberflächen.
-Laminat, Vinyl, Designboden – fachgerecht beraten und verlegt.</p>
+            <p class="card-text">Effiziente Wärme trifft stilvolle Oberflächen.<br>
+            Laminat, Vinyl, Designboden – fachgerecht beraten und verlegt.</p>
           </div>
         </div>
       </div>
-    <div class="col-md-6 col-lg-3">
-  <div class="card h-100">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Komfort - Service">
-    <div class="card-body">
-      <h5 class="card-title">Komfort - Service</h5>
-      <p class="card-text">Wir sind da, wenn es zählt – mit Herz, Verstand und Handwerk.
-Ob schnelle Hilfe oder dauerhafte Begleitung: Wir sorgen dafür, dass alles reibungslos läuft und Sie sich entspannt zurücklehnen können.</p>
+
+      <!-- Hausmeisterservice -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Komfort - Service">
+          <div class="card-body">
+            <h5 class="card-title">Komfort - Service</h5>
+            <p class="card-text">Wir sind da, wenn es zählt – mit Herz, Verstand und Handwerk.<br>
+            Ob schnelle Hilfe oder dauerhafte Begleitung: Wir sorgen dafür, dass alles reibungslos läuft und Sie sich entspannt zurücklehnen können.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
   </section>
 
   <!-- Warum MIRELI -->
